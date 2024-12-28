@@ -1,0 +1,81 @@
+
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+.modal.open {
+    display: flex;
+
+}
+.modal-content {
+    background-color: #fff;
+    color: #27272a;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #ef4444;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.important-label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.important-checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #4CAF50; 
+    cursor: pointer; 
+    margin: auto 0;
+}
+form button {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #288b2d;
+}
